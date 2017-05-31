@@ -67,6 +67,7 @@
     </div>
     <div class="side-container">
       <div class="side-container-buttons">
+        <button type="button" class="side-button" (click)="selectRange('today')" [class.is-active]="range === 'today'">{{options.presetNames[8]}}</button>
         <button type="button" class="side-button" (click)="selectRange('tm')" [class.is-active]="range === 'tm'">{{options.presetNames[0]}}</button>
         <button type="button" class="side-button" (click)="selectRange('lm')" [class.is-active]="range === 'lm'">{{options.presetNames[1]}}</button>
         <button type="button" class="side-button" (click)="selectRange('tw')" [class.is-active]="range === 'tw'">{{options.presetNames[2]}}</button>
